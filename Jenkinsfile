@@ -14,7 +14,7 @@ pipeline {
         stage('Run Python script') {
             steps {
                 echo 'Running tests...'
-		bat 'python main.py'
+		bat 'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\python.exe main.py'
             }
         }
         stage('Deploy') {
