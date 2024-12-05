@@ -11,9 +11,10 @@ pipeline {
                 echo 'Hello Jenkins! This is the build stage.'
             }
         }
-        stage('Test') {
+        stage('Run Python script') {
             steps {
                 echo 'Running tests...'
+		sh 'python main.py'
             }
         }
         stage('Deploy') {
