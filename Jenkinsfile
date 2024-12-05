@@ -21,7 +21,7 @@ pipeline {
         stage('Run Python script') {
             steps {
                 echo 'Running tests...'
-		bat 'python main.py'
+		sh 'python main.py'
             }
         }
         stage('Deploy') {
